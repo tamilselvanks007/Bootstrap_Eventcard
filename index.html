@@ -1,106 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventcard</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    
+
     <style>
-        body{
+        body {
             background-color: lightcoral;
         }
     </style>
 
 </head>
+
 <body>
-    
- <div class="container my-5">
-     <div class="card">
-         <div class="card-header text-center bg-secondary"><h2>Event 1</h2>
-             <h4>Number of available seats: 23</h4>
-         </div>
-         <div class="card-body">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="https://socblendedlearning.com/wp-content/uploads/2019/06/logoEdited.png" alt="event image" class="card-img">
-                </div>
-                <div class="col-md-6">
-                    <form action="" method="POST">
-                   <div class="form-group">
+             <!-- container start -->
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header text-center bg-secondary">
+                <h2>Event 1</h2>
+                <h4>Number of available seats: 23</h4>
+            </div>
+            <div class="card-body">
+                
+                <div class="row">
+                        <div class="col-md-6">
+                                       <!-- image -->
+                        <img src="https://socblendedlearning.com/wp-content/uploads/2019/06/logoEdited.png"
+                            alt="event image" class="card-img">
 
-                    <label for="name"> Name</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <form action="" method="POST">
+                            
+                            <div class="form-group">
+                                       <!-- name -->
+                                <label for="name"> Name</label>
+                                <input type="text" class="form-control" id="name" name="name"
+                                    placeholder="Enter your full name" required>
 
-                   </div>
+                            </div>
 
-                   <div class="form-group">
+                            <div class="form-group">
+                                        <!-- email -->
+                                <label for="email"> Email</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="Enter your email" required>
 
-                    <label for="email"> Email</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
-                    
-                   </div>
+                            </div>
 
-                   <div class="form-group">
+                            <div class="form-group">
+                                        <!-- phone no -->
+                                <label for="phone"> Phone No</label>
+                                <input type="number" class="form-control" id="phone" placeholder="+91" required>
 
-                    <label for="phone"> Phone No</label>
-                    <input type="number" class="form-control" id="phone" placeholder="+91" required>
-                    
-                   </div>
+                            </div>
 
-                   <div class="form-group">
+                            <div class="form-group">
+                                        <!-- no of seats -->
+                                <label for="seats"> Number of seats</label>
+                                <select name="seats" id="seats" class="form-control" required>
+                                   
+                                    <option value="">--Select your seats--</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
 
-                    <label for="seats"> Number of seats</label>
-                       <select name="seats" id="seats" class="form-control" required>
-                           <option value="">--Select your seats--</option>
-                           <option value="1">1</option>
-                           <option value="2">2</option>
-                           <option value="3">3</option>
-                           <option value="4">4</option>
-                           <option value="5">5</option>
-                           <option value="6">6</option>
-                           <option value="7">7</option>
-                           <option value="8">8</option>
-                           <option value="9">9</option>
-                           <option value="10">10</option>
-                           <option value="11">11</option>
-                           <option value="12">12</option>
-                           <option value="13">13</option>
-                           <option value="14">14</option>
-                           <option value="15">15</option>
-                           <option value="16">16</option>
-                           <option value="17">17</option>
-                           <option value="18">18</option>
-                           <option value="19">19</option>
-                           <option value="20">20</option>
-                           <option value="21">21</option>
-                           <option value="22">22</option>
-                           <option value="23">23</option>
-                        
-                       </select>
-                   </div> 
-                   
-                   <div class="form-group">
+                                </select>
+                            </div>
 
-                    <label for="attendee">No of Attendees</label>
-                    <input type="number" class="form-control" id="attendee" required>
-                   </div>
+                            <div class="form-group">
+                                         <!-- no of attendees -->
+                                <label for="attendee">No of Attendees</label>
+                                <input type="number" class="form-control" id="attendee" required>
+                            </div>
 
-                   <div class="form-group">
-                       <button type="submit" class="btn btn-success">Submit</button>
-                       <button type="button" class="btn btn-danger">Cancel</button>
-                   </div>
+                            <div class="form-group">
+                                          <!-- buttons -->
+                                <button type="submit" class="btn btn-success">Submit</button>
+                                <button type="button" class="btn btn-danger">Cancel</button>
+                            </div>
 
 
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
-         </div>
-         
-     </div>
- </div>
- 
+
+        </div>
+    </div>
+                  <!-- container end -->
 </body>
 
 <script src="./assets/js/jquery.min.js"></script>
